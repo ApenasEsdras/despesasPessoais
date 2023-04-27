@@ -1,6 +1,7 @@
 import 'package:expenses/components/transaction_form.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
+// ignore: duplicate_import
 import 'components/transaction_form.dart';
 import 'components/transaction_list.dart';
 import 'components/chart.dart';
@@ -22,12 +23,14 @@ class ExpensesApp extends StatelessWidget {
           secondary: Colors.amber,
         ),
         textTheme: tema.textTheme.copyWith(
+          // ignore: deprecated_member_use
           headline6: const TextStyle(
             fontFamily: 'OpenSans',
             fontSize: 18,
             fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
+          // ignore: deprecated_member_use
           button: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
